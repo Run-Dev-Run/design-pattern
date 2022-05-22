@@ -8,6 +8,7 @@ public class Benchmark {
     }
 
     public BenchmarkData run() {
+        System.gc();
         long beingTime = System.currentTimeMillis();
         long beingMemory = getMemory();
 

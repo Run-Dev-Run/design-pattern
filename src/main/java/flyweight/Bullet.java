@@ -25,4 +25,9 @@ public class Bullet {
         }
         return cached.get(name);
     }
+
+    /** 비교를 위한 객체 재사용을 하지 않는 생성자 */
+    public static Bullet ofNoneFlyweight(String name, int damage, int speed) {
+        return new Bullet(name, damage, speed);
+    }
 }
