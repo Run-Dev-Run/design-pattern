@@ -5,6 +5,10 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Game {
+    private static final String BULLET_NAME = "9mm";
+    private static final int BULLET_DAMAGE = 10;
+    private static final int BULLET_SPEED = 100;
+
     private final int gunSize;
 
     public Game(int gunSize) {
@@ -12,11 +16,11 @@ public class Game {
     }
 
     public void run() {
-        createGrus().forEach(eachGun -> renderBullet(eachGun.fire(), 0, 0));
+        createBullets().forEach(eachBullet -> renderBullet(eachBullet, 0, 0));
     }
 
-    private List<Gun> createGrus() {
-        return Stream.generate(Gun::new)
+    private List<Bullet> createBullets() {
+        return Stream.generate(() -> Bullet.of(BULLET_NAME, BULLET_DAMAGE, BULLET_SPEED))
                      .limit(gunSize)
                      .collect(Collectors.toList());
     }
