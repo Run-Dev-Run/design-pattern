@@ -9,7 +9,6 @@ public class HomeAppliance {
     private AirCleaner airCleaner;
 
     public static class FactoryMaker {
-
         public enum HomeApplianceType {
             OBJECT_COLLECTION,
             BESPOKE
@@ -26,5 +25,4 @@ public class HomeAppliance {
             }
         }
     }
-
 }
