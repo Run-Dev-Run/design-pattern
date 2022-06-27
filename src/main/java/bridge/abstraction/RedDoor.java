@@ -6,8 +6,8 @@ import bridge.implementor.Mover;
 public class RedDoor extends Door {
     private static final String NAME = "빨간색";
 
-    protected RedDoor(Mover mover, Logger logger) {
-        super(mover, logger);
+    protected RedDoor(Logger logger) {
+        super(logger);
     }
 
     @Override

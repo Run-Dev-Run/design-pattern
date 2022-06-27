@@ -4,15 +4,13 @@ import bridge.implementor.Logger;
 import bridge.implementor.Mover;
 
 public abstract class Door {
-    private final Mover mover;
     private final Logger logger;
 
-    protected Door(Mover mover, Logger logger) {
-        this.mover = mover;
+    protected Door(Logger logger) {
         this.logger = logger;
     }
 
-    public final void open() {
+    public final void open(Mover mover) {
         logger.log("문을 열기 위해 문고리를 잡음");
         if (isOpenable()) {
             mover.moveNext();

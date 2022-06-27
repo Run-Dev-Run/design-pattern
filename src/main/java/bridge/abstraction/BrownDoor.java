@@ -8,8 +8,8 @@ public class BrownDoor extends Door {
 
     private int openCounter = 0;
 
-    protected BrownDoor(Mover mover, Logger logger) {
-        super(mover, logger);
+    protected BrownDoor(Logger logger) {
+        super(logger);
     }
 
     @Override

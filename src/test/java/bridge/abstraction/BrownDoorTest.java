@@ -23,7 +23,7 @@ public class BrownDoorTest {
 
     @BeforeEach
     void setUp() {
-        door = new BrownDoor(mover, logger);
+        door = new BrownDoor(logger);
     }
 
     @DisplayName("갈색문은 '갈색'이라는 이름을 반환한다.")

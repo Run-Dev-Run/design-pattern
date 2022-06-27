@@ -22,7 +22,7 @@ public class RedDoorTest {
 
     @BeforeEach
     void setUp() {
-        door = new RedDoor(mover, logger);
+        door = new RedDoor(logger);
     }
 
     @DisplayName("빨간색문은 '빨간색'이라는 이름을 반환한다.")

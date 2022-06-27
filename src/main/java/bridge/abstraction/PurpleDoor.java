@@ -8,8 +8,8 @@ public class PurpleDoor extends Door {
 
     private int openCounter = 0;
 
-    protected PurpleDoor(Mover mover, Logger logger) {
-        super(mover, logger);
+    protected PurpleDoor(Logger logger) {
+        super(logger);
     }
 
     @Override

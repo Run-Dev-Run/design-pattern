@@ -25,7 +25,7 @@ public class DoorTest {
     @DisplayName("문을 열려고할때 로그를 기록한다.")
     @Test
     void openingLog() {
-        door.open();
+        door.open(mover);
         verify(logger)
                .log(eq("문을 열기 위해 문고리를 잡음"));
     }
@@ -34,7 +34,7 @@ public class DoorTest {
     @Test
     void openedMoveNext() {
         door.openable = true;
-        door.open();
+        door.open(mover);
         verify(mover).moveNext();
     }
 
@@ -42,8 +42,8 @@ public class DoorTest {
         private static final String NAME = "가짜문";
         private boolean openable = false;
 
-        protected FakeDoor(Mover mover, Logger logger) {
-            super(mover, logger);
+        protected FakeDoor(Logger logger) {
+            super(logger);
         }
 
         @Override
