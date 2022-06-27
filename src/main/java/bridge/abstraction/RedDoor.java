@@ -16,7 +16,7 @@ public class RedDoor extends Door {
     }
 
     @Override
-    protected boolean open(Mover mover) {
+    protected boolean isOpenable() {
         return false;
     }
 }

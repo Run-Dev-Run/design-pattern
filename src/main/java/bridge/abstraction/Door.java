@@ -1,7 +1,5 @@
 package bridge.abstraction;
 
-import java.time.LocalDateTime;
-
 import bridge.implementor.Logger;
 import bridge.implementor.Mover;
 
@@ -16,12 +14,13 @@ public abstract class Door {
 
     public final void open() {
         logger.log("문을 열기 위해 문고리를 잡음");
-        if (open(mover)) {
+        if (isOpenable()) {
+            mover.moveNext();
             logger.log(getDoorName() + " 열었음");
         }
     }
 
     protected abstract String getDoorName();
 
-    protected abstract boolean open(Mover mover);
+    protected abstract boolean isOpenable();
 }

@@ -18,7 +18,7 @@ public class BrownDoor extends Door {
     }
 
     @Override
-    protected boolean open(Mover mover) {
+    protected boolean isOpenable() {
         return ++openCounter == 5;
     }
 }
