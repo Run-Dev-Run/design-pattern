@@ -10,5 +10,13 @@ public class CarFactory {
 
         Car option2Car = new DecoratorAutoEngine(option1Car);
         option2Car.add();
+
+        Car decoratorCar = new DecoratorAutoEngine(
+                new DecoratorNavigation(
+                        new Decorator4wd(
+                                new DefaultCar()
+                        )
+                )
+        );
     }
 }
