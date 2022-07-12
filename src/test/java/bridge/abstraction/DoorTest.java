@@ -10,7 +10,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import bridge.implementor.Logger;
 import bridge.implementor.Mover;
 
 @ExtendWith(MockitoExtension.class)
@@ -38,7 +37,7 @@ public class DoorTest {
         verify(mover).moveNext();
     }
 
-    private static class FakeDoor extends Door {
+    private static class FakeDoor extends DoorBridge {
         private static final String NAME = "가짜문";
         private boolean openable = false;
 

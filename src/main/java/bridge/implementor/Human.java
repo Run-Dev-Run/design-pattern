@@ -6,7 +6,7 @@ public class Human implements Mover {
     @Override
     public void moveNext() {
         roomLocation += 1;
-        System.out.println("이동 했습니다!!!");
+        System.out.println("사람이 이동 했습니다!!!");
     }
 
     public int getRoomLocation() {

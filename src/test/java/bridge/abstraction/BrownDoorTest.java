@@ -9,7 +9,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import bridge.implementor.Logger;
 import bridge.implementor.Mover;
 
 @ExtendWith(MockitoExtension.class)

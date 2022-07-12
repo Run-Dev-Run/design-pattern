@@ -1,16 +1,9 @@
 package bridge.abstraction;
 
-import bridge.implementor.Logger;
-import bridge.implementor.Mover;
-
-public class BrownDoor extends Door {
+public class BrownDoor extends DoorBridge {
     private static final String NAME = "갈색";
 
     private int openCounter = 0;
-
-    protected BrownDoor(Logger logger) {
-        super(logger);
-    }
 
     @Override
     protected String getDoorName() {
