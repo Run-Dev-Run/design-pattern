@@ -1,9 +1,17 @@
 package facade;
 
 public class Product {
-    int getPrice() {
+    public int getPrice() {
         return 10000;
     }
 
-    void decreaseStock() {}
+    public void decreaseStock() {}
+
+    public void setStock(int stock) {
+
+    }
+
+    public int getStock() {
+        return 10;
+    }
 }

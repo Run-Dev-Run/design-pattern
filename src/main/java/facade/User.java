@@ -1,5 +1,11 @@
 package facade;
 
-public interface User {
-    void deductPoint(int points);
+public class User {
+    public int getPoints() {
+        return 100000;
+    }
+
+    public void deductPoints(int points) {}
+
+    public void setPoints(int points) {}
 }

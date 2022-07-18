@@ -5,6 +5,6 @@ public class OrderFactory {
     }
 
     public static Order createOrder(User user, Product product) {
-        return new Order();
+        return new Order(user, product);
     }
 }
