@@ -1,6 +1,6 @@
 package facade;
 
-public class CorrectFacade implements OrderService {
+public class OrderFacade {
     public String order(User user, Product product) {
         user.deductPoints(product.getPrice());
         product.decreaseStock();
