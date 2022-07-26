@@ -14,5 +14,5 @@
 
 ### Command 패턴을 사용한 자바 클래스
 
-[Runnable](https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html)
-[Action](https://docs.oracle.com/javase/8/docs/api/javax/swing/Action.html)
+- [Runnable](https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html)
+- [Action](https://docs.oracle.com/javase/8/docs/api/javax/swing/Action.html)
