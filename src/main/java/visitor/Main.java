@@ -9,9 +9,12 @@ import visitor.target.Firefox;
 import java.util.ArrayList;
 import java.util.List;
 
+/** 방문 메서드(accept)를 구현 했을 경우
+ *  인터페이스를 통해 서로를 알아 볼 수 있다.
+ * */
 public class Main {
     private static boolean SET_DARK_MODE = true;
-    private static boolean SET_ANONYMOUS = false;
+    private static boolean SET_ANONYMOUS = true;
 
     public static void main(String[] args) {
         List<Browser> browsers = List.of(
