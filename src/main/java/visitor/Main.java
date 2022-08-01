@@ -23,7 +23,9 @@ public class Main {
                 new Firefox()
         );
         List<BrowserVisitor> visitors = visitors();
-        browsers.forEach(eachBrowser -> visit(eachBrowser, visitors));
+        for (Browser eachBrowser : browsers) {
+            visit(eachBrowser, visitors);
+        }
         browsers.forEach(System.out::println);
 
     }
@@ -40,6 +42,8 @@ public class Main {
     }
 
     private static void visit(Browser browser, List<BrowserVisitor> visitor) {
-        visitor.forEach(browser::accept);
+        for (BrowserVisitor eachVisitor : visitor) {
+            browser.accept(eachVisitor);
+        }
     }
 }
