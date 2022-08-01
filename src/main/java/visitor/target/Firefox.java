@@ -1,6 +1,9 @@
 package visitor.target;
 
-public class Firefox {
+import visitor.Browser;
+import visitor.BrowserVisitor;
+
+public class Firefox implements Browser {
     private boolean privateMode;
     private boolean lightMode = false;
 
@@ -10,5 +13,18 @@ public class Firefox {
 
     public void setLightMode(boolean b) {
         this.lightMode = b;
+    }
+
+    @Override
+    public void accept(BrowserVisitor visitor) {
+        visitor.visit(this);
+    }
+
+    @Override
+    public String toString() {
+        return "Firefox{" +
+                "privateMode=" + privateMode +
+                ", lightMode=" + lightMode +
+                '}';
     }
 }

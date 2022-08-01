@@ -6,11 +6,11 @@ import visitor.target.Firefox;
 import visitor.target.IExplorer;
 
 public interface BrowserVisitor {
-    void accept(Chrome chrome);
+    void visit(Chrome chrome);
 
-    void accept(Firefox firefox);
+    void visit(Firefox firefox);
 
-    void accept(Edge edge);
+    void visit(Edge edge);
 
-    void accept(IExplorer iExplorer);
+    void visit(IExplorer iExplorer);
 }

@@ -4,20 +4,39 @@ import visitor.impl.BrowserSetAnonymousVisitor;
 import visitor.impl.BrowserSetDarkModeVisitor;
 import visitor.target.Chrome;
 import visitor.target.Edge;
+import visitor.target.Firefox;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
+    private static boolean SET_DARK_MODE = true;
+    private static boolean SET_ANONYMOUS = false;
+
     public static void main(String[] args) {
-        Chrome chrome = new Chrome();
-        Edge edge = new Edge();
+        List<Browser> browsers = List.of(
+                new Chrome(),
+                new Edge(),
+                new Firefox()
+        );
+        List<BrowserVisitor> visitors = visitors();
+        browsers.forEach(eachBrowser -> visit(eachBrowser, visitors));
+        browsers.forEach(System.out::println);
 
-        // 익명 모드 설정
-        BrowserSetAnonymousVisitor anonymousVisitor = new BrowserSetAnonymousVisitor();
-        anonymousVisitor.accept(chrome);
-        anonymousVisitor.accept(edge);
+    }
 
-        // 다크 모드 설정
-        BrowserSetDarkModeVisitor darkModeVisitor = new BrowserSetDarkModeVisitor();
-        darkModeVisitor.accept(chrome);
-        darkModeVisitor.accept(edge);
+    private static List<BrowserVisitor> visitors() {
+        List<BrowserVisitor> visitors = new ArrayList<>();
+        if (SET_ANONYMOUS) {
+            visitors.add(new BrowserSetAnonymousVisitor());
+        }
+        if (SET_DARK_MODE) {
+            visitors.add(new BrowserSetDarkModeVisitor());
+        }
+        return visitors;
+    }
+
+    private static void visit(Browser browser, List<BrowserVisitor> visitor) {
+        visitor.forEach(browser::accept);
     }
 }

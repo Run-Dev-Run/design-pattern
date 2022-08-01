@@ -8,22 +8,22 @@ import visitor.target.IExplorer;
 
 public class BrowserSetAnonymousVisitor implements BrowserVisitor {
     @Override
-    public void accept(Chrome chrome) {
+    public void visit(Chrome chrome) {
         chrome.setSecureMode(true);
     }
 
     @Override
-    public void accept(Firefox firefox) {
+    public void visit(Firefox firefox) {
         firefox.setPrivateMode(true);
     }
 
     @Override
-    public void accept(Edge edge) {
+    public void visit(Edge edge) {
         edge.setInPrivateMode(true);
     }
 
     @Override
-    public void accept(IExplorer iExplorer) {
+    public void visit(IExplorer iExplorer) {
         throw new EndOfIExplorerException();
     }
 }

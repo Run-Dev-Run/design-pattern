@@ -1,6 +1,9 @@
 package visitor.target;
 
-public class Edge {
+import visitor.Browser;
+import visitor.BrowserVisitor;
+
+public class Edge implements Browser {
     private boolean inPrivateMode = false;
     private EdgeColor color;
 
@@ -10,5 +13,18 @@ public class Edge {
 
     public void setEdgeColor(EdgeColor color) {
         this.color = color;
+    }
+
+    @Override
+    public void accept(BrowserVisitor visitor) {
+        visitor.visit(this);
+    }
+
+    @Override
+    public String toString() {
+        return "Edge{" +
+                "inPrivateMode=" + inPrivateMode +
+                ", color=" + color +
+                '}';
     }
 }

@@ -5,22 +5,22 @@ import visitor.target.*;
 
 public class BrowserSetDarkModeVisitor implements BrowserVisitor {
     @Override
-    public void accept(Chrome chrome) {
+    public void visit(Chrome chrome) {
         chrome.setDarkMode(true);
     }
 
     @Override
-    public void accept(Firefox firefox) {
+    public void visit(Firefox firefox) {
         firefox.setLightMode(false);
     }
 
     @Override
-    public void accept(Edge edge) {
+    public void visit(Edge edge) {
         edge.setEdgeColor(EdgeColor.BLACK);
     }
 
     @Override
-    public void accept(IExplorer iExplorer) {
+    public void visit(IExplorer iExplorer) {
         throw new EndOfIExplorerException();
     }
 }
