@@ -13,8 +13,8 @@ import java.util.List;
  *  인터페이스를 통해 서로를 알아 볼 수 있다.
  * */
 public class Main {
-    private static boolean SET_DARK_MODE = true;
-    private static boolean SET_ANONYMOUS = true;
+    private static final boolean SET_DARK_MODE = true;
+    private static final boolean SET_ANONYMOUS = true;
 
     public static void main(String[] args) {
         List<Browser> browsers = List.of(
