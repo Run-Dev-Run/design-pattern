@@ -1,0 +1,1 @@
+[정리링크](https://www.notion.so/devrunner21/Mememto-e0b0be643a5b4983998cbef692fd7840)
