@@ -1,45 +1,24 @@
 # design-pattern
 
-## 1 week
-
-* Flyweight - 재원님
-* Abstract Factory - 희찬님
-
-## 2 week
-
-* Strategy - 지훈님
-* State - 동건님
-
-## 3 week
-
-* Template Method - 하림님
-* Proxy - 지훈님
-
-## 4 week
-
-* Adapter - 희찬님
-* Bridge - 재원님
-
-## 5 week
-
-* Composite - 하림님
-* Decorator - 동건님
-
-## 6 week
-
-* Facade - 재원님
-* Prototype - 희찬님
-
-## 7 week
-
-* Command - 동건님
-* Mediator - 하림님
-
-## 8 week
-
-* Memento - 지훈님
-* Observer - 동건님
-* Visitor - 재원님
+| 주제 | [김동건](https://github.com/DongGeon0908) | [김지훈](https://github.com/DevRunner21) | [김재원](https://github.com/darkant99) | [이희찬](https://github.com/leeheefull) | [황하림](https://github.com/HwangHarim) |
+|:---:|:--:|:---:|:---:|:---:|:---:|
+| Flyweight |  |  | [20220524](https://github.com/Run-Dev-Run/design-pattern/tree/main/src/main/java/flyweight) |  |  |
+| Abstract Factory |  |  |  | [20220524](https://github.com/Run-Dev-Run/design-pattern/tree/main/src/main/java/abstract_factory) |  |
+| Strategy |  | [20220614](https://github.com/Run-Dev-Run/design-pattern/tree/main/src/main/java/strategy) |  |  |  |
+| State | [20220607](https://github.com/Run-Dev-Run/design-pattern/tree/main/src/main/java/state) |  |  |  |  |
+| Template Method |  |  |  |  | 작성중 |
+| Proxy |  | [20220628](https://github.com/Run-Dev-Run/design-pattern/tree/main/src/main/java/proxy) |  |  |  |
+| Adapter |  |  |  | [20220705](https://github.com/Run-Dev-Run/design-pattern/tree/main/src/main/java/adapter) |  |
+| Bridge |  |  | 작성중 |  |  |
+| Composite |  |  |  |  | 작성중 |
+| Decorator | [20220713](https://github.com/Run-Dev-Run/design-pattern/tree/main/src/main/java/decorator) |  |  |  |  |
+| Facade |  |  | [20220719](https://github.com/Run-Dev-Run/design-pattern/tree/main/src/main/java/facade) |  |  |
+| Prototype |  |  |  | 작성중 |  |
+| Command | [20220726](https://github.com/Run-Dev-Run/design-pattern/tree/main/src/main/java/command) |  |  |  |  |
+| Mediator |  |  |  |  | 작성중 |
+| Memento |  | 작성중 |  |  |  |
+| Observer | [20220814](https://github.com/Run-Dev-Run/design-pattern/tree/main/src/main/java/observer) |  |  |  |  |
+| Visitor |  |  | [20220809](https://github.com/Run-Dev-Run/design-pattern/tree/main/src/main/java/visitor) |  |  |
 
 
 ## git rule
